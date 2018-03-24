@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NetworkGameServer:jar">
+    <output-path>$PROJECT_DIR$/classes/artifacts/NetworkGameServer_jar</output-path>
+    <root id="archive" name="NetworkGameServer.jar">
+      <element id="module-output" name="NetworkGameServer" />
+    </root>
+  </artifact>
+</component>
