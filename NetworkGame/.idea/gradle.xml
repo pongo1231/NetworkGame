@@ -7,9 +7,9 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/android" />
-            <option value="$PROJECT_DIR$/core" />
+            <option value="/media/HDD/Projects/NetworkGame/NetworkGame" />
+            <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android" />
+            <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.pongo1231.networkgame.Game.Net.Networking;
 
 import java.io.IOException;
+import java.net.Socket;
 
 public class NetworkGame extends Game {
 
