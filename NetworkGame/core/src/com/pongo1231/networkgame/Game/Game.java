@@ -18,7 +18,7 @@ public class Game implements Screen, InputProcessor {
     private Vector2 moveDir;
 
     public Game() {
-        player = LocalPlayer.getInstance();
+        player = new LocalPlayer(500, 500);
         map = new Map();
         map.addEntity(player);
         map.setCameraTarget(player);
@@ -55,25 +55,25 @@ public class Game implements Screen, InputProcessor {
             player.setPosition(currentPosition.y, boundries[1][1]);
     }
 
-    public void addPlayerEntity(PlayerEntity playerEntity) {
+    public synchronized void addPlayerEntity(PlayerEntity playerEntity) {
         map.addEntity(playerEntity);
         playerEntities.add(playerEntity);
     }
 
-    public void removePlayerEntity(PlayerEntity playerEntity) {
+    public synchronized void removePlayerEntity(PlayerEntity playerEntity) {
         map.removeEntity(playerEntity);
         playerEntities.remove(playerEntity);
     }
 
-    public LocalPlayer getPlayer() {
+    public synchronized LocalPlayer getPlayer() {
         return player;
     }
 
-    public List<PlayerEntity> getPlayerEntities() {
+    public synchronized List<PlayerEntity> getPlayerEntities() {
         return playerEntities;
     }
 
-    public void updatePlayerEntityPosition(PlayerEntity playerEntity, float x, float y) {
+    public synchronized void updatePlayerEntityPosition(PlayerEntity playerEntity, float x, float y) {
         playerEntity.setPosition(x, y);
     }
 

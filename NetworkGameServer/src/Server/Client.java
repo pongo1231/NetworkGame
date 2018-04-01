@@ -6,7 +6,7 @@ import java.net.Socket;
 public class Client {
 	private Server server;
 	private int id;
-	private int timeoutTime = 10;
+	private int timeoutTime = 15;
 
 	private PlayerConnection connection;
 	
@@ -14,7 +14,7 @@ public class Client {
 		this.server = server;
 		this.id = id;
 		
-		connection = new PlayerConnection(this, socket);
+		connection = new PlayerConnection(this, server, socket);
 		Thread connectionThread = new Thread(connection);
 		connectionThread.start();
 	}

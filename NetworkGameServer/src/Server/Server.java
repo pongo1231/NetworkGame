@@ -78,17 +78,20 @@ public class Server {
 	
 	private void addClient(Client client) {
 		clients.add(client);
-		clientTimeouts.addClient(client);
 		sendDataToAllClients(Type.SERVER_CLIENT_JOINED, client.getID());
 	}
 	
-	public void kickClient(String reason, Client... kickClients) throws IOException {
+	public synchronized void kickClient(String reason, Client... kickClients) throws IOException {
 		for (Client client : kickClients) {
 			client.getConnection().getSocket().close();
 			clients.remove(client);
-			clientTimeouts.removeClient(client);
+			sendDataToAllClients(Type.SERVER_REMOVE_CLIENT, client.getID());
 			log(String.format("Client ID %d disconnected (" + reason + ")", client.getID()));
 		}
+	}
+	
+	public List<Client> getClients() {
+		return clients;
 	}
 	
 	private static void log(String message) {
@@ -108,8 +111,12 @@ public class Server {
 	}
 
     public enum Type {
+        CLIENT_INITIAL_HANDSHAKE(99),
+        SERVER_INITIAL_HANDSHAKE(98),
+    	
         SERVER_CLIENT_JOINED(0),
         SERVER_CLIENT_UPDATE_POS(1),
+        SERVER_REMOVE_CLIENT(2),
         CLIENT_UPDATE_POS(100),
         CLIENT_PING(101);
 

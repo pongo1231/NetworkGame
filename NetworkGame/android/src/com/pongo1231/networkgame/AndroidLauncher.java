@@ -1,38 +1,46 @@
 package com.pongo1231.networkgame;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.badlogic.gdx.backends.android.AndroidApplication;
-import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.pongo1231.networkgame.NetworkGame;
+public class AndroidLauncher extends Activity {
+	private static final int PORT = 41000;
 
-public class AndroidLauncher extends AndroidApplication {
 	private EditText ipView;
-	private AndroidApplicationConfiguration config;
+	private EditText portView;
 
 	@Override
-	protected void onCreate (Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.serverchooser);
 
 		ipView = findViewById(R.id.serverchooser_ip);
-		config = new AndroidApplicationConfiguration();
-		config.useImmersiveMode = true;
-		config.useWakelock = true;
+		portView = findViewById(R.id.serverchooser_port);
 	}
 
-	public void onConnectClick(Button button) {
-		if (ipView.getText().equals(""))
+	public void onConnectClick(View v) {
+		String ipText = ipView.getText().toString();
+		if (isEmpty(ipText))
 			Toast.makeText(this, "Please enter an IP", Toast.LENGTH_SHORT).show();
-		else
-			initialize(new NetworkGame(), config);
+		else {
+			int port = PORT;
+			String portText = portView.getText().toString();
+			if (!isEmpty(portText))
+				port = Integer.valueOf(portView.getText().toString());
+
+			tryConnect(ipText, port);
+		}
 	}
 
-	private void tryConnect(String ip) {
-		// TODO
+	private void tryConnect(String ip, int port) {
+		Handshaking handshaking = new Handshaking(this, ip, port);
+		handshaking.execute();
+	}
+
+	private boolean isEmpty(String text) {
+		return text.trim().length() == 0;
 	}
 }

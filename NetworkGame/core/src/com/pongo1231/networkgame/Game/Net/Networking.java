@@ -14,9 +14,10 @@ public class Networking {
     private Game game;
     private int id = -1;
 
-    public Networking(String ip, int port, Game game) throws IOException {
-        socket = new Socket(ip, port);
+    public Networking(Socket socket, Game game) throws IOException {
         socket.setKeepAlive(true);
+        this.socket = socket;
+
         dataOut = new DataOutputStream(socket.getOutputStream());
         this.game = game;
 
@@ -59,8 +60,12 @@ public class Networking {
     }
 
     public enum Type {
+        CLIENT_HANDSHAKE(99),
+        SERVER_HANDSHAKE(98),
+
         SERVER_CLIENT_JOINED(0),
         SERVER_CLIENT_UPDATE_POS(1),
+        SERVER_REMOVE_CLIENT(2),
         CLIENT_UPDATE_POS(100),
         CLIENT_PING(101);
 

@@ -6,11 +6,9 @@ import java.util.List;
 
 public class ClientTimeouts implements Runnable {
 	private Server server;
-	private List<Client> clients;
 	
 	public ClientTimeouts(Server server) {
 		this.server = server;
-		clients = new ArrayList<>();
 	}
 	
 	@Override
@@ -20,7 +18,7 @@ public class ClientTimeouts implements Runnable {
 				Thread.sleep(1000);
 				
 				List<Client> toBeKicked = new ArrayList<>();
-				for (Client client : clients) {
+				for (Client client : server.getClients()) {
 					client.updateTimeoutTime();
 					if (client.getTimeoutTime() <= 0)
 						toBeKicked.add(client);
@@ -32,13 +30,5 @@ public class ClientTimeouts implements Runnable {
 				e.printStackTrace();
 			}
 		}
-	}
-	
-	public void addClient(Client client) {
-		clients.add(client);
-	}
-	
-	public void removeClient(Client client) {
-		clients.remove(client);
 	}
 }

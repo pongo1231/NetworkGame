@@ -8,12 +8,17 @@ import java.io.IOException;
 import java.net.Socket;
 
 public class NetworkGame extends Game {
+	private Socket socket;
+
+	public NetworkGame(Socket socket) {
+		this.socket = socket;
+	}
 
 	@Override
 	public void create() {
 		try {
 			com.pongo1231.networkgame.Game.Game game = new com.pongo1231.networkgame.Game.Game();
-			Networking networking = new Networking("192.168.178.134", 41000, game);
+			Networking networking = new Networking(socket, game);
 			if (!networking.getSocket().isConnected()) {
 				Gdx.app.setLogLevel(Application.LOG_ERROR);
 				Gdx.app.log("NetworkGame", "Could not connect.");

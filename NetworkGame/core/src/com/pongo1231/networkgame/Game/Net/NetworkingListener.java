@@ -41,6 +41,12 @@ public class NetworkingListener implements Runnable {
                         PlayerEntity playerEntity = networking.getPlayerEntityByID(id);
                         if (playerEntity != null)
                             game.updatePlayerEntityPosition(playerEntity, x, y);
+                        break;
+                    case SERVER_REMOVE_CLIENT:
+                        playerEntity = networking.getPlayerEntityByID(id);
+                        if (playerEntity != null)
+                            game.removePlayerEntity(playerEntity);
+                        break;
                     default:
                         break;
                 }

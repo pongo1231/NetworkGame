@@ -9,12 +9,14 @@ import Server.Server.Type;
 
 public class PlayerConnection implements Runnable {
 	private Client client;
+	private Server server;
 	private Socket socket;
 	private DataInputStream dataInput;
 	private DataOutputStream dataOutput;
 	
-	public PlayerConnection(Client client, Socket socket) throws IOException {
+	public PlayerConnection(Client client, Server server, Socket socket) throws IOException {
 		this.client = client;
+		this.server = server;
 		this.socket = socket;
 		dataInput = new DataInputStream(socket.getInputStream());
 		dataOutput = new DataOutputStream(socket.getOutputStream());
@@ -38,7 +40,7 @@ public class PlayerConnection implements Runnable {
 			case CLIENT_UPDATE_POS:
 				float x = dataInput.readFloat();
 				float y = dataInput.readFloat();
-				client.getServer().sendDataToAllClients(Server.Type.SERVER_CLIENT_UPDATE_POS, client.getID(), x, y);
+				server.sendDataToAllClients(Server.Type.SERVER_CLIENT_UPDATE_POS, client.getID(), x, y);
 				break;
 			case CLIENT_PING:
 				client.resetTimeoutTime();

@@ -15,7 +15,7 @@ public class NetworkingPosition implements Runnable {
     public void run() {
         while (true) {
             try {
-                Thread.sleep(16);
+                Thread.sleep(33);
                 Vector2 playerPosition = networking.getGame().getPlayer().getPosition();
                 networking.sendData(Networking.Type.CLIENT_UPDATE_POS, playerPosition.x, playerPosition.y);
             } catch (IOException e) {
