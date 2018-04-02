@@ -14,6 +14,10 @@ public class Networking {
     private Game game;
     private int id = -1;
 
+    private Thread listener;
+    private Thread pinging;
+    private Thread position;
+
     public Networking(Socket socket, Game game) throws IOException {
         socket.setKeepAlive(true);
         this.socket = socket;
@@ -21,13 +25,13 @@ public class Networking {
         dataOut = new DataOutputStream(socket.getOutputStream());
         this.game = game;
 
-        Thread listener = new Thread(new NetworkingListener(this));
+        listener = new Thread(new NetworkingListener(this));
         listener.start();
 
-        Thread pinging = new Thread(new NetworkingPinging(this));
+        pinging = new Thread(new NetworkingPinging(this));
         pinging.start();
 
-        Thread position = new Thread(new NetworkingPosition(this));
+        position = new Thread(new NetworkingPosition(this));
         position.start();
     }
 
@@ -59,6 +63,19 @@ public class Networking {
         return game;
     }
 
+    public void destroy() throws IOException {
+        sendData(Type.CLIENT_DISCONNECT);
+        listener.interrupt();
+        pinging.interrupt();
+        position.interrupt();
+        socket.close();
+    }
+
+    public void disconnect() throws IOException {
+        destroy();
+        game.exit();
+    }
+
     public enum Type {
         CLIENT_HANDSHAKE(99),
         SERVER_HANDSHAKE(98),
@@ -67,7 +84,8 @@ public class Networking {
         SERVER_CLIENT_UPDATE_POS(1),
         SERVER_REMOVE_CLIENT(2),
         CLIENT_UPDATE_POS(100),
-        CLIENT_PING(101);
+        CLIENT_PING(101),
+        CLIENT_DISCONNECT(102);
 
         private final int value;
         Type(int value) {

@@ -45,6 +45,9 @@ public class PlayerConnection implements Runnable {
 			case CLIENT_PING:
 				client.resetTimeoutTime();
 				break;
+			case CLIENT_DISCONNECT:
+				server.kickClient("Disconected", client);
+				break;
 			default:
 				break;
 		}

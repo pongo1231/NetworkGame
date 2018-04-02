@@ -6,7 +6,7 @@ import java.net.Socket;
 public class Client {
 	private Server server;
 	private int id;
-	private int timeoutTime = 15;
+	private int timeoutTime = 5;
 
 	private PlayerConnection connection;
 	
@@ -36,7 +36,7 @@ public class Client {
 	}
 	
 	public boolean isTimedout() {
-		return timeoutTime <= 0;
+		return !connection.getSocket().isConnected() || timeoutTime <= 0;
 	}
 	
 	public PlayerConnection getConnection() {

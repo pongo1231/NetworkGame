@@ -1,9 +1,12 @@
 package com.pongo1231.networkgame;
 
 import android.app.Activity;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class AndroidLauncher extends Activity {
@@ -11,6 +14,7 @@ public class AndroidLauncher extends Activity {
 
 	private EditText ipView;
 	private EditText portView;
+	private TextView versionView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +23,14 @@ public class AndroidLauncher extends Activity {
 
 		ipView = findViewById(R.id.serverchooser_ip);
 		portView = findViewById(R.id.serverchooser_port);
+
+		versionView = findViewById(R.id.serverchooser_version);
+		try {
+			PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+			versionView.setText("Version " + packageInfo.versionName + " (" +  packageInfo.versionCode + ")");
+		} catch (PackageManager.NameNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void onConnectClick(View v) {

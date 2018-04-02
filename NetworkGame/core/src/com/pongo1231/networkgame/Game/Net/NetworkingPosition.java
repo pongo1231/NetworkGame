@@ -13,7 +13,7 @@ public class NetworkingPosition implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        while (networking.getSocket().isConnected()) {
             try {
                 Thread.sleep(33);
                 Vector2 playerPosition = networking.getGame().getPlayer().getPosition();
@@ -21,7 +21,6 @@ public class NetworkingPosition implements Runnable {
             } catch (IOException e) {
             } catch (InterruptedException e) {
                 e.printStackTrace();
-                break;
             }
         }
     }

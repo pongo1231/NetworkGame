@@ -59,15 +59,15 @@ public class Server {
 	}
 	
 	public void sendDataToAllClients(Type type, int id, int... data) {
-		for (Client client : new ArrayList<Client>(clients)) {
-			sendDataToClient(client, type, id, data);
-		}
+		for (Client client : new ArrayList<Client>(clients))
+			if (client.getID() != id)
+				sendDataToClient(client, type, id, data);
 	}
 	
 	public void sendDataToAllClients(Type type, int id, float... data) {
-		for (Client client : new ArrayList<Client>(clients)) {
-			sendDataToClient(client, type, id, data);
-		}
+		for (Client client : new ArrayList<Client>(clients))
+			if (client.getID() != id)
+				sendDataToClient(client, type, id, data);
 	}
 	
 	public void sendAllClientIDsToClient(Client client) {
@@ -118,7 +118,8 @@ public class Server {
         SERVER_CLIENT_UPDATE_POS(1),
         SERVER_REMOVE_CLIENT(2),
         CLIENT_UPDATE_POS(100),
-        CLIENT_PING(101);
+        CLIENT_PING(101),
+        CLIENT_DISCONNECT(102);
 
         private final int value;
         Type(int value) {

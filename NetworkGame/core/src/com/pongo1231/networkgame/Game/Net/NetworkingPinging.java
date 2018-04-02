@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class NetworkingPinging implements Runnable {
     private Networking networking;
+    private int timeoutTime = 5;
 
     public NetworkingPinging(Networking networking) throws IOException {
         this.networking = networking;
@@ -13,21 +14,26 @@ public class NetworkingPinging implements Runnable {
 
     @Override
     public void run() {
-        while (true) {
+        while (networking.getSocket().isConnected()) {
             try {
                 Thread.sleep(1000);
                 networking.sendData(Networking.Type.CLIENT_PING);
+                timeoutTime = 5;
             } catch (IOException e) {
                 e.printStackTrace();
-
-                // TODO: Better server disconnect system
-                System.exit(-1);
-
                 break;
             } catch (InterruptedException e) {
                 e.printStackTrace();
                 break;
+            } finally {
+                timeoutTime--;
             }
+        }
+
+        try {
+            networking.disconnect();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }

@@ -29,4 +29,12 @@
         android:onClick="onConnectClick"
         android:text="Connect"
         tools:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/serverchooser_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Version Unknown" />
+
 </LinearLayout>

@@ -4,6 +4,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.actions.MoveToAction;
 import com.pongo1231.networkgame.Game.Entities.LocalPlayer;
 import com.pongo1231.networkgame.Game.Entities.PlayerEntity;
+import com.pongo1231.networkgame.Game.Net.Networking;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -77,6 +78,11 @@ public class Game implements Screen, InputProcessor {
         playerEntity.setPosition(x, y);
     }
 
+    public void exit() {
+        // TODO: Better exiting
+        System.exit(-1);
+    }
+
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         if (pointer > 0)
@@ -84,8 +90,16 @@ public class Game implements Screen, InputProcessor {
 
         moving = true;
         Vector2 currentPosition = player.getPosition();
-        moveDir.x = (screenX - currentPosition.x) * 0.01f;
-        moveDir.y = (screenY - currentPosition.y) * 0.01f;
+        if (screenX > currentPosition.x)
+            moveDir.x = (currentPosition.x - screenX) * 0.01f;
+        else
+            moveDir.x = (screenX - currentPosition.x) * 0.01f;
+
+        if (screenY > currentPosition.y)
+            moveDir.y = (currentPosition.y - screenY) * 0.01f;
+        else
+            moveDir.y = (screenY - currentPosition.y) * 0.01f;
+
         return true;
     }
 
@@ -95,8 +109,16 @@ public class Game implements Screen, InputProcessor {
             return false;
 
         Vector2 currentPosition = player.getPosition();
-        moveDir.x = (screenX - currentPosition.x) * 0.01f;
-        moveDir.y = (screenY - currentPosition.y) * 0.01f;
+        if (screenX > currentPosition.x)
+            moveDir.x = (currentPosition.x - screenX) * 0.01f;
+        else
+            moveDir.x = (screenX - currentPosition.x) * 0.01f;
+
+        if (screenY > currentPosition.y)
+            moveDir.y = (currentPosition.y - screenY) * 0.01f;
+        else
+            moveDir.y = (screenY - currentPosition.y) * 0.01f;
+
         return true;
     }
 
