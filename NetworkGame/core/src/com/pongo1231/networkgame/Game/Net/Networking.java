@@ -77,9 +77,6 @@ public class Networking {
     }
 
     public enum Type {
-        CLIENT_HANDSHAKE(99),
-        SERVER_HANDSHAKE(98),
-
         SERVER_CLIENT_JOINED(0),
         SERVER_CLIENT_UPDATE_POS(1),
         SERVER_REMOVE_CLIENT(2),

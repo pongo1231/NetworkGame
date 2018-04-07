@@ -19,8 +19,8 @@ public class ClientTimeouts implements Runnable {
 				
 				List<Client> toBeKicked = new ArrayList<>();
 				for (Client client : server.getClients()) {
-					client.updateTimeoutTime();
-					if (client.getTimeoutTime() <= 0)
+					client.getConnection().updateTimeoutTime();
+					if (client.getConnection().getTimeoutTime() <= 0)
 						toBeKicked.add(client);
 				}
 				

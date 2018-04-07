@@ -12,8 +12,11 @@ import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.pongo1231.networkgame.Game.Net.Networking;
 
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.nio.channels.InterruptedByTimeoutException;
 
 public class Handshaking extends AsyncTask<Void, Void, Boolean> {
     private Activity activity;
@@ -21,6 +24,7 @@ public class Handshaking extends AsyncTask<Void, Void, Boolean> {
     private int port;
     private ProgressDialog loadingDialog;
     private static Socket socket;
+    private boolean hasServerHandshaked = false;
 
     public Handshaking(Activity activity, String ip, int port) {
         this.activity = activity;
@@ -32,7 +36,7 @@ public class Handshaking extends AsyncTask<Void, Void, Boolean> {
     protected void onPreExecute() {
         super.onPreExecute();
         loadingDialog = new ProgressDialog(activity);
-        loadingDialog.setTitle("Connecting...");
+        loadingDialog.setMessage("Connecting...");
         loadingDialog.setCancelable(false);
         loadingDialog.show();
     }
@@ -44,13 +48,40 @@ public class Handshaking extends AsyncTask<Void, Void, Boolean> {
             if (!socket.isConnected())
                 return false;
 
-            // TODO: HANDHSAKING
-        } catch (IOException e) {
+            DataOutputStream dataOut = new DataOutputStream(socket.getOutputStream());
+            dataOut.writeByte(Type.CLIENT_INITIAL_HANDSHAKE.getValue());
+
+            Thread handshakeThread = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        while (!hasServerHandshaked) {
+                            DataInputStream dataInput = new DataInputStream(socket.getInputStream());
+                            if (dataInput.readByte() == Type.SERVER_INITIAL_HANDSHAKE.getValue())
+                                hasServerHandshaked = true;
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+            handshakeThread.run();
+
+            int waitTime = 5;
+            while (!hasServerHandshaked) {
+                Thread.sleep(1000);
+                waitTime--;
+                if (waitTime == 0) {
+                    handshakeThread.interrupt();
+                    return false;
+                }
+            }
+
+            return true;
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
             return false;
         }
-
-        return true;
     }
 
     @Override

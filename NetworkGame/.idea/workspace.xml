@@ -14,24 +14,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b1bc066-b61a-4dbf-9f2e-918ae670b324" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="$PROJECT_DIR$/../.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="$PROJECT_DIR$/../.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../LICENSE" afterPath="$PROJECT_DIR$/../LICENSE" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_1_9_8_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_1_9_8_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_android_1_9_8_jar.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_badlogicgames_gdx_gdx_backend_android_1_9_8_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/core_core_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/core_core_1_0.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gdx_1_9_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/gdx_1_9_8.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/android/assets/map.tmx" afterPath="$PROJECT_DIR$/android/assets/map.tmx" />
+      <change beforePath="$PROJECT_DIR$/android/assets/pl_minepit.bsp" afterPath="$PROJECT_DIR$/android/assets/pl_minepit.bsp" />
+      <change beforePath="$PROJECT_DIR$/android/assets/pl_minepit.rcw" afterPath="$PROJECT_DIR$/android/assets/pl_minepit.rcw" />
+      <change beforePath="$PROJECT_DIR$/android/assets/player.png" afterPath="$PROJECT_DIR$/android/assets/player.png" />
+      <change beforePath="$PROJECT_DIR$/android/assets/tile.png" afterPath="$PROJECT_DIR$/android/assets/tile.png" />
       <change beforePath="$PROJECT_DIR$/android/build.gradle" afterPath="$PROJECT_DIR$/android/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/android/ic_launcher-web.png" afterPath="$PROJECT_DIR$/android/ic_launcher-web.png" />
+      <change beforePath="$PROJECT_DIR$/android/proguard-rules.pro" afterPath="$PROJECT_DIR$/android/proguard-rules.pro" />
+      <change beforePath="$PROJECT_DIR$/android/project.properties" afterPath="$PROJECT_DIR$/android/project.properties" />
+      <change beforePath="$PROJECT_DIR$/android/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/res/drawable-hdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/res/drawable-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/res/drawable-mdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/res/drawable-xhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/res/drawable-xxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/android/res/drawable-xxxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/android/res/drawable-xxxhdpi/ic_launcher.png" />
       <change beforePath="$PROJECT_DIR$/android/res/layout/serverchooser.xml" afterPath="$PROJECT_DIR$/android/res/layout/serverchooser.xml" />
+      <change beforePath="$PROJECT_DIR$/android/res/values/strings.xml" afterPath="$PROJECT_DIR$/android/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/android/res/values/styles.xml" afterPath="$PROJECT_DIR$/android/res/values/styles.xml" />
       <change beforePath="$PROJECT_DIR$/android/src/com/pongo1231/networkgame/AndroidLauncher.java" afterPath="$PROJECT_DIR$/android/src/com/pongo1231/networkgame/AndroidLauncher.java" />
+      <change beforePath="$PROJECT_DIR$/android/src/com/pongo1231/networkgame/GameLauncher.java" afterPath="$PROJECT_DIR$/android/src/com/pongo1231/networkgame/GameLauncher.java" />
+      <change beforePath="$PROJECT_DIR$/android/src/com/pongo1231/networkgame/Handshaking.java" afterPath="$PROJECT_DIR$/android/src/com/pongo1231/networkgame/Handshaking.java" />
+      <change beforePath="$PROJECT_DIR$/android/version.properties" afterPath="$PROJECT_DIR$/android/version.properties" />
       <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle" afterPath="$PROJECT_DIR$/core/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Entities/Entity.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Entities/Entity.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Entities/LocalPlayer.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Entities/LocalPlayer.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Entities/PlayerEntity.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Entities/PlayerEntity.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Game.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Game.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Map.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Map.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/Networking.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/Networking.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/NetworkingListener.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/NetworkingListener.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPinging.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPinging.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPosition.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPosition.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/NetworkGame.java" afterPath="$PROJECT_DIR$/core/src/com/pongo1231/networkgame/NetworkGame.java" />
-      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/classes/artifacts/NetworkGameServer_jar/NetworkGameServer.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/src/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/.classpath" afterPath="$PROJECT_DIR$/../NetworkGameServer/.classpath" />
+      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/.idea/artifacts/NetworkGameServer_jar.xml" afterPath="$PROJECT_DIR$/../NetworkGameServer/.idea/artifacts/NetworkGameServer_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/.idea/misc.xml" afterPath="$PROJECT_DIR$/../NetworkGameServer/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../NetworkGameServer/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../NetworkGameServer/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/.project" afterPath="$PROJECT_DIR$/../NetworkGameServer/.project" />
       <change beforePath="$PROJECT_DIR$/../NetworkGameServer/src/Server/Client.java" afterPath="$PROJECT_DIR$/../NetworkGameServer/src/Server/Client.java" />
+      <change beforePath="$PROJECT_DIR$/../NetworkGameServer/src/Server/ClientTimeouts.java" afterPath="$PROJECT_DIR$/../NetworkGameServer/src/Server/ClientTimeouts.java" />
       <change beforePath="$PROJECT_DIR$/../NetworkGameServer/src/Server/PlayerConnection.java" afterPath="$PROJECT_DIR$/../NetworkGameServer/src/Server/PlayerConnection.java" />
       <change beforePath="$PROJECT_DIR$/../NetworkGameServer/src/Server/Server.java" afterPath="$PROJECT_DIR$/../NetworkGameServer/src/Server/Server.java" />
+      <change beforePath="$PROJECT_DIR$/../README" afterPath="$PROJECT_DIR$/../README" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,55 +108,99 @@
       <file leaf-file-name="AndroidLauncher.java" pinned="false" current-in-tab="false">
         <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/AndroidLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="69">
+              <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="Handshaking.java" pinned="false" current-in-tab="true">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/Handshaking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-336">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="-134">
+              <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="39" />
               <folding>
-                <element signature="e#270#288#0" expanded="true" />
+                <element signature="e#1700#2290#0" expanded="true" />
+                <element signature="e#2289#2290#0" expanded="true" />
+                <element signature="e#3347#3348#0" expanded="true" />
+                <element signature="e#3376#3377#0" expanded="true" />
+                <element signature="e#3536#3537#0" expanded="true" />
+                <element signature="e#3578#3579#0" expanded="true" />
+                <element signature="e#3611#3612#0" expanded="true" />
+                <element signature="e#3647#3648#0" expanded="true" />
               </folding>
             </state>
           </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="GameLauncher.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/GameLauncher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Networking.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/Networking.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetworkingPinging.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPinging.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetworkingListener.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Entities/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetworkGame.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/NetworkGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="81" column="31" lean-forward="false" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -2631,26 +2725,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/Handshaking.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/GameLauncher.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Entities/LocalPlayer.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/NetworkGame.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingListener.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPosition.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Game.java" />
-        <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/Networking.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPinging.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android/res/layout/serverchooser.xml" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/AndroidLauncher.java" />
         <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android/build.gradle" />
+        <option value="/media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/Networking.java" />
+        <option value="/media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/Handshaking.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="118" />
-    <option name="y" value="66" />
+    <option name="x" value="-109" />
+    <option name="y" value="52" />
     <option name="width" value="1400" />
     <option name="height" value="834" />
   </component>
@@ -2670,9 +2764,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2737,6 +2829,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -2915,7 +3009,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="66" width="1400" height="834" extended-state="0" />
+    <frame x="-109" y="52" width="1400" height="834" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2924,22 +3019,21 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16642012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2947,6 +3041,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33048433" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2958,6 +3053,57 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/AndroidLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/res/layout/serverchooser.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPinging.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -2969,11 +3115,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1616#1617#0" expanded="false" />
-            <element signature="e#1655#1656#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3034,29 +3176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="428" column="19" lean-forward="false" selection-start-line="428" selection-start-column="19" selection-end-line="428" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/GameLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/Handshaking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2054#2055#0" expanded="false" />
-            <element signature="e#2083#2084#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3064,14 +3183,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-384">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3100,46 +3211,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingListener.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="15" lean-forward="false" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="51" />
+        <state relative-caret-position="288">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/NetworkGame.java">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#342#343#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="81" column="31" lean-forward="false" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+        <state relative-caret-position="560">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/Networking.java">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="80" column="29" lean-forward="false" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPinging.java">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="160">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -3155,48 +3257,84 @@
         <state />
       </provider>
     </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/AndroidManifest.xml">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/NetworkGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#270#288#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="81" column="31" lean-forward="false" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/build.gradle">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingPinging.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="483">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/NetworkingListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/AndroidLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="69">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/core/src/com/pongo1231/networkgame/Game/Net/Networking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="42">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/build.gradle">
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/GameLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        <state relative-caret-position="208">
+          <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///media/HDD/Projects/NetworkGame/NetworkGame/android/src/com/pongo1231/networkgame/Handshaking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="26" column="39" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="e#1700#2290#0" expanded="true" />
+            <element signature="e#2289#2290#0" expanded="true" />
+            <element signature="e#3347#3348#0" expanded="true" />
+            <element signature="e#3376#3377#0" expanded="true" />
+            <element signature="e#3536#3537#0" expanded="true" />
+            <element signature="e#3578#3579#0" expanded="true" />
+            <element signature="e#3611#3612#0" expanded="true" />
+            <element signature="e#3647#3648#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

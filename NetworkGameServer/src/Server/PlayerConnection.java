@@ -13,6 +13,8 @@ public class PlayerConnection implements Runnable {
 	private Socket socket;
 	private DataInputStream dataInput;
 	private DataOutputStream dataOutput;
+	private boolean hasHandshaked = false;
+	private int timeoutTime = 5;
 	
 	public PlayerConnection(Client client, Server server, Socket socket) throws IOException {
 		this.client = client;
@@ -24,10 +26,52 @@ public class PlayerConnection implements Runnable {
 
 	@Override
 	public void run() {
-		while (!client.isTimedout()) {
+		handshake();
+		if (!hasHandshaked)
 			try {
-				readInput();
-			} catch (IOException e) {}
+				destroyConnection("No handshake");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		else
+			while (!isTimedout()) {
+				try {
+					readInput();
+				} catch (IOException e) {
+					return;
+				}
+			}
+	}
+	
+	private void handshake() {
+		try {
+			Thread handshakeThread = new Thread(new Runnable() {
+				@Override
+				public void run() {
+					try {
+						while (!hasHandshaked)
+							if (dataInput.readByte() == Type.CLIENT_INITIAL_HANDSHAKE.getValue()) {
+								dataOutput.writeByte(Type.SERVER_INITIAL_HANDSHAKE.getValue());
+								hasHandshaked = true;
+							}
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			});
+			handshakeThread.run();
+			
+			int waitTime = 5;
+			while (!hasHandshaked) {
+				Thread.sleep(1000);
+				waitTime--;
+				if (waitTime == 0) {
+					handshakeThread.interrupt();
+					hasHandshaked = false;
+				}
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 	
@@ -43,14 +87,34 @@ public class PlayerConnection implements Runnable {
 				server.sendDataToAllClients(Server.Type.SERVER_CLIENT_UPDATE_POS, client.getID(), x, y);
 				break;
 			case CLIENT_PING:
-				client.resetTimeoutTime();
+				resetTimeoutTime();
 				break;
 			case CLIENT_DISCONNECT:
-				server.kickClient("Disconected", client);
+				destroyConnection("Disconected");
 				break;
 			default:
 				break;
 		}
+	}
+	
+	private void destroyConnection(String reason) throws IOException {
+		server.kickClient(reason, client);
+	}
+	
+	public void resetTimeoutTime() {
+		timeoutTime = 5;
+	}
+	
+	public void updateTimeoutTime() {
+		timeoutTime--;
+	}
+	
+	public int getTimeoutTime() {
+		return timeoutTime;
+	}
+	
+	public boolean isTimedout() {
+		return !socket.isConnected() || timeoutTime <= 0;
 	}
 	
 	public Socket getSocket() {

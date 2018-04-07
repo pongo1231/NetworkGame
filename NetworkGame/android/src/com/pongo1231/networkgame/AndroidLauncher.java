@@ -27,7 +27,7 @@ public class AndroidLauncher extends Activity {
 		versionView = findViewById(R.id.serverchooser_version);
 		try {
 			PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
-			versionView.setText("Version " + packageInfo.versionName + " (" +  packageInfo.versionCode + ")");
+			versionView.setText("Version " + packageInfo.versionName + " | Build " +  packageInfo.versionCode);
 		} catch (PackageManager.NameNotFoundException e) {
 			e.printStackTrace();
 		}
