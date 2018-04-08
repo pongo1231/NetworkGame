@@ -19,15 +19,14 @@ public class NetworkingPinging implements Runnable {
                 Thread.sleep(1000);
                 networking.sendData(Networking.Type.CLIENT_PING);
                 timeoutTime = 5;
-            } catch (IOException e) {
+            } catch (IOException | InterruptedException e) {
                 e.printStackTrace();
                 break;
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                break;
-            } finally {
-                timeoutTime--;
             }
+
+            timeoutTime--;
+            if (timeoutTime == 0)
+                break;
         }
 
         try {
